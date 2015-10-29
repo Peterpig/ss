@@ -67,7 +67,7 @@ $node = new Ss\Node\Node();
                     <div class="box box-solid">
                         <div class="box-header">
                             <i class="fa fa-code"></i>
-                            <h3 class="box-title">Notice</h3>
+                            <h3 class="box-title">Notice </h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="callout callout-warning">
