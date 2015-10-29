@@ -67,13 +67,9 @@ $node = new Ss\Node\Node();
                     <div class="box box-solid">
                         <div class="box-header">
                             <i class="fa fa-code"></i>
-                            <h3 class="box-title">Pro节点</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
-                            <div class="callout callout-warning">
-                                <h4>注意!</h4>
-                                <p>....</p>
-                            </div><?php
+                            <?php
                             $node1 = $node->NodesArray(1);
                             foreach($node1 as $row){
                                 ?>
