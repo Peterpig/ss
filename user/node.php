@@ -67,12 +67,12 @@ $node = new Ss\Node\Node();
                     <div class="box box-solid">
                         <div class="box-header">
                             <i class="fa fa-code"></i>
-                            <h3 class="box-title">绿软分享站</h3>
+                            <h3 class="box-title">Notice</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="callout callout-warning">
-                                <h4>注意!</h4>
-                                <p><a href="www.anybfans.com">Anybfans</p>
+                                <h4>绿软分享站</h4>
+                                <p><a href="http://www.anybfans.com" target="_blank">Anybfans</p>
                             </div><?php
                             $node1 = $node->NodesArray(1);
                             foreach($node1 as $row){
