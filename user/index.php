@@ -69,9 +69,9 @@ $unix_time = $oo->get_last_unix_time();
                                 $zero1 = date("y-m-d h:i:s");
                                 $zero2 = $oo->get_end_date();
                                 if(strtotime($zero1)<strtotime($zero2)){
-                                 echo "<span class='label label-err'>已欠费"</span>;
+                                 echo "已欠费";
                                 }else{
-                                 echo "<span class='label label-success'>时间充足，请放心使用！</span>";
+                                 echo 时间充足，请放心使用！;
                                 }
                             ?>
                             </p>
