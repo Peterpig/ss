@@ -64,7 +64,17 @@ $unix_time = $oo->get_last_unix_time();
                             </div>
                             <p> 可用流量：<?php echo $all_transfer ."GB";?> </p>
                             <p> 剩余流量：<?php echo  $unused_transfer."GB";?> </p>
-                            <p> 到期时间：<code><?php echo $oo->get_end_date();?></code></p>
+                            <p> SS到期时间：<code><?php echo $oo->get_end_date();?></code>
+                            <?php
+                                $zero1 = date("y-m-d h:i:s");
+                                $zero2 = $oo->get_end_date();
+                                if(strtotime($zero1)<strtotime($zero2)){
+                                 echo "<span class='label label-err'>已欠费"</span>;
+                                }else{
+                                 echo "<span class='label label-success'>时间充足，请放心使用！</span>;";
+                                }
+                            ?>
+                            </p>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
                 </div><!-- /.col (left) -->
