@@ -69,14 +69,19 @@ $unix_time = $oo->get_last_unix_time();
                                 $zero1 = date("Y-m-d h:i:s");
                                 $zero2 = $oo->get_end_date();
                                 $status = 1;
-                                echo $zero1;
-                                echo $zero2;
-                                if(strtotime($zero1)<strtotime($zero2)){
+                                if(strtotime($zero1) > strtotime($zero2)){
                                  $status = 0;
                                 }
-                                echo "       sss   ";
-                                echo $status;
                             ?>
+                            <span class="<?php if ($status == 1){echo 'label label-err'}else{ echo 'label label-success' }">
+                                <?php 
+                                    if ($status == 1){
+                                        时间充足，请放心使用！
+                                    }else{
+                                        已到期，请及时缴费！
+                                    }
+                                ?>
+                            </span>
                             </p>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
