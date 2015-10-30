@@ -66,7 +66,7 @@ $unix_time = $oo->get_last_unix_time();
                             <p> 剩余流量：<?php echo  $unused_transfer."GB";?> </p>
                             <p> SS到期时间：<code><?php echo $oo->get_end_date();?></code>
                             <?php
-                                $zero1 = date("y-m-d h:i:s");
+                                $zero1 = date("Y-m-d h:i:s");
                                 $zero2 = $oo->get_end_date();
                                 $status = 1;
                                 echo $zero1;
@@ -74,6 +74,7 @@ $unix_time = $oo->get_last_unix_time();
                                 if(strtotime($zero1)<strtotime($zero2)){
                                  $status = 0;
                                 }
+                                echo "       sss   ";
                                 echo $status;
                             ?>
                             </p>
