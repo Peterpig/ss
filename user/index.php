@@ -76,9 +76,9 @@ $unix_time = $oo->get_last_unix_time();
                             <span class="label label-info">
                                 <?php 
                                     if ($status == 1){
-                                        时间充足，请放心使用！
+                                        echo "时间充足，请放心使用！";
                                     }else{
-                                        已到期，请及时缴费！
+                                         echo "已到期，请及时缴费！";
                                     }
                                 ?>
                             </span>
