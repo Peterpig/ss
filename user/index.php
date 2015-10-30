@@ -73,7 +73,7 @@ $unix_time = $oo->get_last_unix_time();
                                  $status = 0;
                                 }
                             ?>
-                            <span class="label label-info">
+                            <span class='if ($status == 1){ echo "label label-info";} else {echo "label label-err";}'>
                                 <?php 
                                     if ($status == 1){
                                         echo "时间充足，请放心使用！";
