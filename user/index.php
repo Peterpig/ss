@@ -68,11 +68,13 @@ $unix_time = $oo->get_last_unix_time();
                             <?php
                                 $zero1 = date("y-m-d h:i:s");
                                 $zero2 = $oo->get_end_date();
+                                $status = 1;
+                                echo $zero1;
+                                echo $zero2;
                                 if(strtotime($zero1)<strtotime($zero2)){
-                                 echo "已欠费";
-                                }else{
-                                 echo 时间充足，请放心使用！;
+                                 $status = 0;
                                 }
+                                echo $status;
                             ?>
                             </p>
                         </div><!-- /.box-body -->
