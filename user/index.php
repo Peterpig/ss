@@ -73,12 +73,12 @@ $unix_time = $oo->get_last_unix_time();
                                  $status = 0;
                                 }
                             ?>
-                            <span class='if ($status == 1){ echo "label label-info";} else {echo "label label-err";}'>
+                            <span class='<?php if ($status == 1){ echo "label label-success";} else {echo "label label-err";} ?>'>
                                 <?php 
                                     if ($status == 1){
-                                        echo "时间充足，请放心使用！";
+                                        echo "  时间充足，请放心使用！";
                                     }else{
-                                         echo "已到期，请及时缴费！";
+                                         echo "  已到期，请及时缴费！";
                                     }
                                 ?>
                             </span>
