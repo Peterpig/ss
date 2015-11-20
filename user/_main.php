@@ -46,7 +46,7 @@ require_once '_check.php';
                 <ul class="nav navbar-nav">
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="<?php echo \Ss\User\Comm::Gravatar($U->GetEmail());  ?>" class="user-image" alt="User Image"/>
                             <span class="hidden-xs"><?php echo $U->GetUserName(); ?></span>
                         </a>
@@ -122,12 +122,6 @@ require_once '_check.php';
                 <li>
                     <a href="invite.php">
                         <i class="fa fa-users"></i> <span>邀请好友</span>
-                    </a>
-                </li>
-
-                <li  >
-                    <a href="sys.php">
-                        <i class="fa fa-align-left"></i> <span>系统信息</span>
                     </a>
                 </li>
 
