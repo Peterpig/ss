@@ -138,10 +138,7 @@ require_once '_footer.php'; ?>
             format: 'Y-m-d H:i:s',
             changeMonth: true,
             changeYear: true,
-            pickTime: true,
-            onClose: function( selectedDate ) {
-                    $( "#end_date" ).datepicker( "option", "minDate", selectedDate );
-                }
+            pickTime: true
         })
     })
 </script>
