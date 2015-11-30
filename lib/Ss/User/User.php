@@ -28,7 +28,7 @@ namespace Ss\User;
              "email" => $email,
              "passwd" => $passwd,
              "transfer_enable" => $transfer_enable,
-             "invite_num" => $invite_num
+             "invite_num" => $invite_num,
              "end_date" => $end_date
          ],[
              "uid" => $this->uid
