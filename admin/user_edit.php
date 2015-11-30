@@ -93,7 +93,7 @@ if(!empty($_GET)){
 </div><!-- /.content-wrapper -->
 <?php
 require_once '_footer.php'; ?>
-<script type='text/javascript' src='http://libs.useso.com/js/jqueryui/1.8.13/jquery-ui.min.js'></script>
+<script type='text/javascript' src='http://libs.useso.com/js/jqueryui/1.10.4/jquery-ui.min.js'></script>
 <script>
     $(document).ready(function(){
         $("#submit").click(function(){
