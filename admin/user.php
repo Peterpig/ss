@@ -49,7 +49,6 @@ $Users = new Ss\User\User();
                                         <td>
                                             <span class="<?php if(strtotime(date('Y-m-d h:i:s')) > strtotime($rs['end_date'])){ echo 'btn btn-danger btn-sm' ;}?>">
                                                 <?php echo $rs['end_date']; ?>
-                                                <?php echo strtotime($rs['end_date']); ?>
                                             </span>
                                         </td>
                                         <td>
