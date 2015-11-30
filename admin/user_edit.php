@@ -116,7 +116,7 @@ require_once '_footer.php'; ?>
                     email: $("#email").val(),
                     passwd: $("#passwd").val(),
                     transfer_enable: $("#transfer_enable").val() * 1024 * 1024 * 1024,
-                    invite_num: $("#invite_num").val()
+                    invite_num: $("#invite_num").val(),
                     end_date: $("#end_date").val()
                 },
                 success:function(data){
