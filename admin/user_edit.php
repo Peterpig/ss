@@ -135,7 +135,7 @@ require_once '_footer.php'; ?>
             $("#msg-error").hide(100);
         })
         $("#end_date").datetimepicker({ 
-            format: "yyyy-MM-dd hh:mm:ss",
+            format: 'Y-m-d H:i:s',
             changeMonth: true,
             changeYear: true,
             pickTime: true,
