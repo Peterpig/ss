@@ -19,6 +19,8 @@ require_once '_check.php';
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link href="../asset/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="http://libs.useso.com/js/jqueryui/1.10.4/css/jquery-ui.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
