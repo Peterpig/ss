@@ -61,8 +61,8 @@ if(!empty($_GET)){
                             </div>
 
                             <div class="form-group">
-                                <label for="cate_title">设置流量</label>
-                                <input   class="form-control" id="transfer_enable"  value="<?php echo $rs['end_date'];?>" placeholder="到期时间" >
+                                <label for="cate_title">到期时间</label>
+                                <input   class="form-control" id="end_date"  value="<?php echo $rs['end_date'];?>" placeholder="到期时间" >
                             </div>
                             
                             <div class="form-group">
@@ -96,6 +96,15 @@ require_once '_footer.php'; ?>
 
 <script>
     $(document).ready(function(){
+
+        $("#end_date").datepicker({ 
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            changeYear: true,
+            onClose: function( selectedDate ) {
+                    $( "#end_date" ).datepicker( "option", "minDate", selectedDate );
+                }
+        })
         $("#submit").click(function(){
             $.ajax({
                 type:"POST",
@@ -108,6 +117,7 @@ require_once '_footer.php'; ?>
                     passwd: $("#passwd").val(),
                     transfer_enable: $("#transfer_enable").val() * 1024 * 1024 * 1024,
                     invite_num: $("#invite_num").val()
+                    end_date: $("#end_date").val()
                 },
                 success:function(data){
                     if(data.ok){
