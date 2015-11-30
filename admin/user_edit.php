@@ -134,7 +134,9 @@ require_once '_footer.php'; ?>
         $("#error-close").click(function(){
             $("#msg-error").hide(100);
         })
-        $("#end_date").datetimepicker({ 
+        $("#end_date").datetimepicker({
+            lang: 'ch',
+            allowTimes: ['00:00:00'],
             format: 'Y-m-d H:i:s',
             changeMonth: true,
             changeYear: true,
