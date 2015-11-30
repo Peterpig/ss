@@ -30,6 +30,7 @@ $Users = new Ss\User\User();
                                     <th>剩余流量</th>
                                     <th>已使用流量</th>
                                     <th>最后签到</th>
+                                    <th>到期时间</th>
                                     <th>邀请人</th>
                                     <th>操作</th>
                                 </tr>
@@ -40,11 +41,12 @@ $Users = new Ss\User\User();
                                         <td>#<?php echo $rs['uid']; ?></td>
                                         <td><?php echo $rs['user_name']; ?></td>
                                         <td><?php echo $rs['email']; ?></td>
-                                        <td><?php echo $rs['port']; ?></td>
+                                        <td><span class="btn btn-info btn-sm"><?php echo $rs['port']; ?></span></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow($rs['transfer_enable']); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['transfer_enable']-$rs['u']-$rs['d'])); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['u']+$rs['d'])); ?></td>
                                         <td><?php echo date('Y-m-d H:i:s',$rs['last_check_in_time']); ?></td>
+                                        <td><span class="btn btn-info btn-sm"><?php echo date('Y-m-d H:i:s',$rs['end_date']); ?></span></td>
                                         <td>
 <?php 
 if ( $rs['ref_by'] != 0 ){

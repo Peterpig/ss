@@ -59,6 +59,11 @@ if(!empty($_GET)){
                                 <label for="cate_title">设置流量</label>
                                 <input   class="form-control" id="transfer_enable"  value="<?php echo $rs['transfer_enable']/$togb;?>" placeholder="单位为GB，直接输入数值" >
                             </div>
+
+                            <div class="form-group">
+                                <label for="cate_title">设置流量</label>
+                                <input   class="form-control" id="transfer_enable"  value="<?php echo $rs['end_date'];?>" placeholder="到期时间" >
+                            </div>
                             
                             <div class="form-group">
                                 <label for="cate_title">邀请码数量</label>
