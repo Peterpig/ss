@@ -41,12 +41,16 @@ $Users = new Ss\User\User();
                                         <td>#<?php echo $rs['uid']; ?></td>
                                         <td><?php echo $rs['user_name']; ?></td>
                                         <td><?php echo $rs['email']; ?></td>
-                                        <td><span class="btn btn-info btn-sm"><?php echo $rs['port']; ?></span></td>
+                                        <td><?php echo $rs['port']; ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow($rs['transfer_enable']); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['transfer_enable']-$rs['u']-$rs['d'])); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['u']+$rs['d'])); ?></td>
                                         <td><?php echo date('Y-m-d H:i:s',$rs['last_check_in_time']); ?></td>
-                                        <td><span class="btn btn-info btn-sm"><?php echo date('Y-m-d H:i:s',$rs['end_date']); ?></span></td>
+                                        <td>
+                                            <span class="btn btn-info btn-sm">
+                                                <?php echo $rs['end_date']; ?>
+                                            </span>
+                                        </td>
                                         <td>
 <?php 
 if ( $rs['ref_by'] != 0 ){
