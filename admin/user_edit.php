@@ -93,18 +93,9 @@ if(!empty($_GET)){
 </div><!-- /.content-wrapper -->
 <?php
 require_once '_footer.php'; ?>
-
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 <script>
     $(document).ready(function(){
-
-        $("#end_date").datepicker({ 
-            dateFormat: "yy-mm-dd",
-            changeMonth: true,
-            changeYear: true,
-            onClose: function( selectedDate ) {
-                    $( "#end_date" ).datepicker( "option", "minDate", selectedDate );
-                }
-        })
         $("#submit").click(function(){
             $.ajax({
                 type:"POST",
@@ -142,6 +133,14 @@ require_once '_footer.php'; ?>
         })
         $("#error-close").click(function(){
             $("#msg-error").hide(100);
+        })
+        $("#end_date").datepicker({ 
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            changeYear: true,
+            onClose: function( selectedDate ) {
+                    $( "#end_date" ).datepicker( "option", "minDate", selectedDate );
+                }
         })
     })
 </script>
