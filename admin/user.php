@@ -46,11 +46,10 @@ $Users = new Ss\User\User();
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['transfer_enable']-$rs['u']-$rs['d'])); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['u']+$rs['d'])); ?></td>
                                         <td><?php echo date('Y-m-d H:i:s',$rs['last_check_in_time']); ?></td>
-                                        <td>     
-                                            <span class="<?php if(strtotime(date('Y-m-d h:i:s')) > strtotime(date('Y-m-d h:i:s', $rs['end_date']))){ echo 'btn btn-danger btn-sm' ;}?>">
+                                        <td>
+                                            <span class="<?php if(strtotime(date('Y-m-d h:i:s')) > strtotime($rs['end_date'])){ echo 'btn btn-danger btn-sm' ;}?>">
                                                 <?php echo $rs['end_date']; ?>
-                                                <?php echo date('Y-m-d h:i:s'); ?>
-                                                <?php date('Y-m-d h:i:s', $rs['end_date']); ?>
+                                                <?php echo strtotime($rs['end_date']); ?>
                                             </span>
                                         </td>
                                         <td>
