@@ -134,10 +134,11 @@ require_once '_footer.php'; ?>
         $("#error-close").click(function(){
             $("#msg-error").hide(100);
         })
-        $("#end_date").datepicker({ 
-            dateFormat: "yy-mm-dd",
+        $("#end_date").datetimepicker({ 
+            dateFormat: "yy-mm-dd hh:mm:ss",
             changeMonth: true,
             changeYear: true,
+            pickTime: true,
             onClose: function( selectedDate ) {
                     $( "#end_date" ).datepicker( "option", "minDate", selectedDate );
                 }
