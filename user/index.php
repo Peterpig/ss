@@ -80,6 +80,11 @@ $unix_time = $oo->get_last_unix_time();
                                     }
                                 ?>
                             </span>
+                            <p> 有问题联系我：
+                            <?php
+                                echo '<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=309871271&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:309871271:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a>';
+                            ?>
+                            </p>
                             </p>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
