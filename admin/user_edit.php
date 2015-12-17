@@ -136,7 +136,7 @@ require_once '_footer.php'; ?>
         })
         $("#end_date").datetimepicker({
             lang: 'ch',
-            allowTimes: ['00:00'],
+            allowTimes: ['00:00:00'],
             format: 'Y-m-d H:i:s',
             changeMonth: true,
             changeYear: true,
