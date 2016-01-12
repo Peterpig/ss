@@ -85,6 +85,9 @@ $unix_time = $oo->get_last_unix_time();
                                 echo '<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=309871271&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:309871271:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a>';
                             ?>
                             </p>
+                            <p> 支付二维码：
+                            <code onclick="ViewPic()">点击这里查看二维码</code>付款完成后，请将您的支付宝名字 和 端口号，发到上面的QQ，谢谢！
+                            </p>
                             </p>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
@@ -127,11 +130,18 @@ $unix_time = $oo->get_last_unix_time();
             <!-- END PROGRESS BARS -->
         </section><!-- /.content -->
     </div><!-- /.content-wrapper -->
+<div id="layer-photos-demo" class="layer-photos-demo">
+    <img layer-pid="1" layer-src="https://ooo.0o0.ooo/2016/01/11/569484390e6ee.png" src="https://ooo.0o0.ooo/2016/01/11/56948438f3f5d.png" alt="搜我支付，请备注支付端口！">
+</div>
 <?php
 require_once '_footer.php'; ?>
 
+<script src="../asset/layer.js"></script>
 <script>
     $(document).ready(function(){
+        layer.config({
+            extend: '../asset/extend/layer.ext.js'
+        });
         $("#checkin").click(function(){
             $.ajax({
                 type:"GET",
@@ -147,5 +157,23 @@ require_once '_footer.php'; ?>
             })
         })
     })
+function ViewPic(){
+    // pic_list = {
+    //     'alt':'支付时请备注端口号',
+    //     'pid':1,
+    //     'src':'https://ooo.0o0.ooo/2016/01/11/5694885745685.png',
+    //     'thumb': 'https://ooo.0o0.ooo/2016/01/11/5694885753cf8.png'
+    // }
+    var pic_list = new Array();
+    pic_list.push({'alt':'完成后请将您支付宝名+端口号发给群主！', 'pid':1, 'src':'https://ooo.0o0.ooo/2016/01/11/56948aa53a652.png', 'thumb':'https://ooo.0o0.ooo/2016/01/11/56948aa53a652.png'})
+    json_dic = {
+            "title": "完成后请将您支付宝名+端口号发给群主！", //相册标题
+            "id": 1, //相册id
+            "data": pic_list
+        }
+    layer.photos({
+        photos: json_dic,
+    });
+}
 </script>
 
