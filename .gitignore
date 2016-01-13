@@ -2,3 +2,5 @@
 lib/config.php
 vendor
 composer.lock
+
+config.php
