@@ -119,6 +119,11 @@ require_once '_check.php';
                         <i class="fa fa-users"></i> <span>邀请管理</span>
                     </a>
                 </li>
+                <li>
+                    <a href="invite.php">
+                        <i class="fa fa-users"></i> <span>邀请码</span>
+                    </a>
+                </li>
 
             </ul>
         </section>
