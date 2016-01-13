@@ -24,7 +24,7 @@ class D {
             'charset' => $dbInfo['charset'],
 
             // optional
-            'port' => 3306,
+            'port' => 3307,
             // driver_option for connection, read more from http://www.php.net/manual/en/pdo.setattribute.php
         ]);
     }
