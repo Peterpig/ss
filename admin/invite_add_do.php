@@ -7,5 +7,9 @@ $type = $_POST['code_type'];
 $num  = $_POST['code_num'];
 $c = new \Ss\User\InviteCode();
 $c->AddCode($sub,$type,$num);
-echo ' <script>alert("添加成功!")</script> ';
-echo " <script>window.location='invite.php';</script> " ;
+echo '
+<script type="text/javascript" charset="utf-8">
+    layer.alert("添加成功!")
+    window.location="invite.php"
+</script>
+';

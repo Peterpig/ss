@@ -16,10 +16,10 @@ require_once '_check.php';
     <!-- Ionicons -->
     <link href="//cdn.bootcss.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet">
     <!-- Theme style -->
-    <link href="../asset/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://anyb.applinzi.com/asset/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link href="../asset/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://anyb.applinzi.com/asset/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
     
     <link href="//cdn.bootcss.com/jquery-datetimepicker/2.1.8/jquery.datetimepicker.min.css" rel="stylesheet" type="text/css" />
 
