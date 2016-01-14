@@ -130,9 +130,6 @@ $unix_time = $oo->get_last_unix_time();
             <!-- END PROGRESS BARS -->
         </section><!-- /.content -->
     </div><!-- /.content-wrapper -->
-<div id="layer-photos-demo" class="layer-photos-demo">
-    <img layer-pid="1" layer-src="https://ooo.0o0.ooo/2016/01/11/569484390e6ee.png" src="https://ooo.0o0.ooo/2016/01/11/56948438f3f5d.png" alt="搜我支付，请备注支付端口！">
-</div>
 <?php
 require_once '_footer.php'; ?>
 
