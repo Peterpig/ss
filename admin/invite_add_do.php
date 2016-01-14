@@ -8,10 +8,8 @@ $num  = $_POST['code_num'];
 $c = new \Ss\User\InviteCode();
 $c->AddCode($sub,$type,$num);
 echo '
-<script src="http://anyb.applinzi.com/asset/js/jQuery.min.js"></script>
-<script src="http://anyb.applinzi.com/asset/layer.js"></script>
 <script type="text/javascript" charset="utf-8">
-    layer.alert("添加成功!");
-    window.location="invite.php";
+    alert("添加成功!");
+    window.location="invite_list.php";
 </script>
 ';
