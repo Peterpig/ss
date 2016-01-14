@@ -2,7 +2,7 @@
 require_once '_main.php';
 
 $invite = new \Ss\User\Invite($uid);
-$code = $invite->CodeArray();
+$code = $invite->AllCodeArray();
 ?>
 
     <!-- =============================================== -->

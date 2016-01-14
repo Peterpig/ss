@@ -20,10 +20,16 @@ class Invite {
     }
 
     function CodeArray(){
-        $datas = $this->db->select($this->table,"*");
+        $datas = $this->db->select($this->table,"*",[
+            "user" => $this->uid
+        ]);
         return $datas;
     }
 
+    function AllCodeArray(){
+        $datas = $this->db->select($this->table,"*");
+        return $datas;
+    }
     function AddAllCode(){
         $u = new UserInfo($this->uid);
         $num = $u->InviteNum();
