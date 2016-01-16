@@ -121,7 +121,12 @@ $unix_time = $oo->get_last_unix_time();
                         <div class="box-body">
                             <p> 端口：<code><?php echo $oo->get_port();?></code> </p>
                             <p> 密码：<?php echo $oo->get_pass();?> </p>
-                            <p> 套餐：<span class="label label-info"><?php echo $oo->get_plan();?></span> </p>
+                            <p> 点击下载配置文件：
+                                <span class="label label-success">
+                                    <a href="/user/down_config.php/?s1=ss1.anyb.tk&s2=ss2.anyb.tk&port=<?php echo $oo->get_port();?>&password=<?php echo $oo->get_pass();?>" style="color: #ccc;">配置文件</a>
+                                </span>
+                            </p>
+                            <p>使用教程：</p>
                             <p> 最后使用时间：<code><?php echo date('Y-m-d H:i:s',$unix_time);  ?></code> </p>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
