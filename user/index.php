@@ -121,12 +121,12 @@ $unix_time = $oo->get_last_unix_time();
                         <div class="box-body">
                             <p> 端口：<code><?php echo $oo->get_port();?></code> </p>
                             <p> 密码：<?php echo $oo->get_pass();?> </p>
-                            <p> 点击下载配置文件：
+                            <p> 配置文件：
                                 <span class="label label-success">
-                                    <a href="/user/down_config.php/?s1=ss1.anyb.tk&s2=ss2.anyb.tk&port=<?php echo $oo->get_port();?>&password=<?php echo $oo->get_pass();?>" style="color: #ccc;">配置文件</a>
+                                    <a href="/user/down_config.php/?s1=ss1.anyb.tk&s2=ss2.anyb.tk&port=<?php echo $oo->get_port();?>&password=<?php echo $oo->get_pass();?>" style="color: #fff;">点击下载</a>
                                 </span>
                             </p>
-                            <p>使用教程：</p>
+                            <p>使用教程：<a href="javascript:;" class="label label-success" id="tea">点我查看教程</a></p>
                             <p> 最后使用时间：<code><?php echo date('Y-m-d H:i:s',$unix_time);  ?></code> </p>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
@@ -158,14 +158,18 @@ require_once '_footer.php'; ?>
                 }
             })
         })
+
+    // 点击查看教程
+    $("#tea").click(function(){
+            layer.open({
+                title:'使用教程',
+                type: 1,
+                area: ['420px', '240px'], //宽高
+                content: '<p style="padding:10px 0 0 10px;">1、去<a href="http://www.anybfans.com/1902.html" target="_blank" style="color:blue;">Anybfans</a>下载最新版本的shadowsocks</p><p style="padding:10px 0 0 10px;">2、下载配置文件（连接信息中的配置文件）</p><p style="padding:10px 0 0 10px;">3、解压第一步的文件，将配置文件放在同一级别的目录</p><p style="padding:10px 0 0 10px;">4、访问测试是否可以登陆<a href="https://www.google.com/" target="_blank" style="color:blue;">Google</a></p>'
+            });
+        })
     })
 function ViewPic(){
-    // pic_list = {
-    //     'alt':'支付时请备注端口号',
-    //     'pid':1,
-    //     'src':'https://ooo.0o0.ooo/2016/01/11/5694885745685.png',
-    //     'thumb': 'https://ooo.0o0.ooo/2016/01/11/5694885753cf8.png'
-    // }
     var pic_list = new Array();
     pic_list.push({'alt':'完成后请将您支付宝名+端口号发给群主！', 'pid':1, 'src':'https://ooo.0o0.ooo/2016/01/11/56948aa53a652.png', 'thumb':'https://ooo.0o0.ooo/2016/01/11/56948aa53a652.png'})
     json_dic = {
