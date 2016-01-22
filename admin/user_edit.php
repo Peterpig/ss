@@ -97,6 +97,10 @@ require_once '_footer.php'; ?>
 <script>
     $(document).ready(function(){
         $("#submit").click(function(){
+            if($("#end_date").val().length <= 10){
+                var enddate = $("#end_date").val() + " 00:00:00";
+                $("#end_date").val(enddate);
+            }
             $.ajax({
                 type:"POST",
                 url:"_user_edit.php",
@@ -136,11 +140,10 @@ require_once '_footer.php'; ?>
         })
         $("#end_date").datetimepicker({
             lang: 'ch',
-            allowTimes: ['00:00:00'],
-            format: 'Y-m-d H:i:s',
+            format: 'Y-m-d',
             changeMonth: true,
             changeYear: true,
-            pickTime: true
+            timepicker:false
         })
     })
 </script>

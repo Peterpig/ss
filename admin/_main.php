@@ -10,18 +10,18 @@ require_once '_check.php';
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
     <!-- <link href="../asset/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
-    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="http://120.52.72.22/apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
-    <link href="http://libs.useso.com/js/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://120.52.72.22/libs.useso.com/js/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
-    <link href="//cdn.bootcss.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet">
+    <link href="http://120.52.72.22/cdn.bootcss.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet">
     <!-- Theme style -->
-    <link href="http://anyb.applinzi.com/asset/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://120.52.72.22/anyb.applinzi.com/asset/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link href="http://anyb.applinzi.com/asset/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://120.52.72.22/anyb.applinzi.com/asset/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
     
-    <link href="//cdn.bootcss.com/jquery-datetimepicker/2.1.8/jquery.datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://120.52.72.22/cdn.bootcss.com/jquery-datetimepicker/2.1.8/jquery.datetimepicker.min.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

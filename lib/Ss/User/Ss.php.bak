@@ -14,21 +14,14 @@ class Ss {
         global $db;
         $this->uid = $uid;
         $this->db  = $db;
-        $this->mmc = memcache_init();
     }
 
     //user info array
     function get_user_info_array(){
-        $val = $this->mmc->get($this->uid.'_datas');
-        if ($val) {
-            $datas = $val;
-        }else{
-            $datas = $this->db->select("user","*",[
-                "uid" => $this->uid,
-                "LIMIT" => "1"
-            ]);
-            $this->mmc->set($this->uid.'_datas', $datas, 0, 60*60*13);
-        }
+        $datas = $this->db->select("user","*",[
+            "uid" => $this->uid,
+            "LIMIT" => "1"
+        ]);
         return $datas['0'];
     }
 

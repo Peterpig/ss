@@ -15,17 +15,10 @@ namespace Ss\User;
          global $db;
          $this->uid = $uid;
          $this->db  = $db;
-         $this->mmc = memcache_init();
      }
 
      function AllUser(){
-        $val = $this->mmc->get('all_user');
-        if ($val) {
-            $datas =$val;
-        }else{
-            $datas = $this->db->select($this->table,"*");
-            $this->mmc->set('all_user', $datas, 0, 60*60*2);
-        }
+        $datas = $this->db->select($this->table,"*");
         return $datas;
      }
 

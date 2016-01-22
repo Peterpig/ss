@@ -10,7 +10,6 @@ if(!empty($_POST)){
     $transfer_enable = $_POST['transfer_enable'];
     $invite_num = $_POST['invite_num'];
     $end_date = $_POST['end_date'];
-      
     //更新
     $User = new Ss\User\User($uid);
     $query = $User->updateUser($name,$email,$passwd,$transfer_enable,$invite_num, $end_date);
