@@ -17,6 +17,9 @@ if(!empty($_POST)){
                 $ue['code'] = '1';
                 $ue['ok'] = '1';
                 $ue['msg'] = "修改成功！即将跳转到用户管理列表！";
+                $mmc = memcache_init();
+                $mmc->delete('all_user');
+                $mmc->delete($uid.'_datas');
     }else{
                 $ue['code'] = '0';
                 $ue['msg'] = "出错了，请重试";
