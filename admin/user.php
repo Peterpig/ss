@@ -11,6 +11,7 @@ $Users = new Ss\User\User();
             <h1>
                 用户管理
                 <small>User Manage</small>
+                <a class="btn btn-info btn-sm" href="retset_memcache.php?type=1" style="float: right;">memcache</a>
             </h1>
         </section>
 
@@ -29,7 +30,7 @@ $Users = new Ss\User\User();
                                     <th>总流量</th>
                                     <th>剩余流量</th>
                                     <th>已使用流量</th>
-                                    <th>最后签到</th>
+                                    <th>最后使用时间</th>
                                     <th>到期时间</th>
                                     <th>邀请人</th>
                                     <th>操作</th>
@@ -45,7 +46,7 @@ $Users = new Ss\User\User();
                                         <td><?php \Ss\Etc\Comm::flowAutoShow($rs['transfer_enable']); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['transfer_enable']-$rs['u']-$rs['d'])); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['u']+$rs['d'])); ?></td>
-                                        <td><?php echo date('Y-m-d H:i:s',$rs['last_check_in_time']); ?></td>
+                                        <td><?php echo date('Y-m-d H:i:s',$rs['t']); ?></td>
                                         <td>
                                             <span class="<?php if(strtotime(date('Y-m-d h:i:s')) > strtotime($rs['end_date'])){ echo 'btn btn-danger btn-sm' ;}?>">
                                                 <?php echo $rs['end_date']; ?>
