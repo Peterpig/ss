@@ -37,7 +37,7 @@ if(!empty($_GET)){
 
                             <div class="form-group">
                                 <label for="cate_title">ID: <?php echo $uid;?></label><br>
-                                <label for="cate_title">端口号: <?php echo $rs['port'];?></label>
+                                <label for="cate_title">端口号: <code><?php echo $rs['port'];?></code></label>
                                 <input type="hidden" class="form-control" id="uid" value="<?php echo $uid;?>"  >
                             </div>
 

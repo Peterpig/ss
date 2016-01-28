@@ -54,7 +54,7 @@ require_once '../lib/config.php';
 
 
             <div class="form-group has-feedback">
-               <p>注册即代表同意<a href="tos.php">服务条款</a></p>
+               <p style="color: red;">注册即代表同意<a href="tos.php" target="_blank">《服务条款》</a></p>
             </div>
 
             <div class="form-group has-feedback">
