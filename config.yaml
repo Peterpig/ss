@@ -1,0 +1,7 @@
+name: anyb
+version: 1
+
+cron:
+- description: cron_test
+  url: tools/corn.php
+  schedule: "5 0 * * *"

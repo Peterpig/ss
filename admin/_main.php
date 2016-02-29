@@ -104,6 +104,12 @@ require_once '_check.php';
                 </li>
 
                 <li>
+                    <a href="server.php">
+                        <i class="fa fa-dashboard"></i> <span>服务器状态</span>
+                    </a>
+                </li>
+
+                <li>
                     <a href="node.php">
                         <i class="fa fa-sitemap"></i> <span>节点编辑</span>
                     </a>

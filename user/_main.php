@@ -104,7 +104,7 @@ require_once '_check.php';
 
                 <li>
                     <a href="node.php">
-                        <i class="fa fa-sitemap"></i> <span>节点列表</span>
+                        <i class="fa fa-sitemap"></i> <span>服务器列表</span>
                     </a>
                 </li>
 
