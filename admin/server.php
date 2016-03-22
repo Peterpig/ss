@@ -55,7 +55,7 @@ require_once '_footer.php'; ?>
 <script>
     var url = 'https://vnet.link/openapi/v1/vdog';
     var userid = '31823';
-    var token = '842251bf0f74cacd27463ccc20a4e03c';
+    var token = 'de35a6af47a92f8c607aa284ce326a1e';
     var postg = {
             id:userid,
             token: token,
