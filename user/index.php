@@ -44,8 +44,9 @@ $unix_time = $oo->get_last_unix_time();
                             <h3 class="box-title">公告&FAQ</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
-                            <p>流量不会重置，可以通过签到获取流量。</p> 
-                            <p>流量可以通过签到获取，基本每天可以用1G流量。</p> 
+                            <p>流量每月会自动重置，流量可以通过签到获取。</p>
+                                
+                            <div style="margin:0px auto 0px auto;"><img src="https://ooo.0o0.ooo/2016/01/11/56948aa53a652.png" width="200px"></div>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
                 </div><!-- /.col (right) -->
@@ -86,7 +87,8 @@ $unix_time = $oo->get_last_unix_time();
                             ?>
                             </p>
                             <p> 支付二维码：
-                            <code onclick="ViewPic()">点击这里查看二维码</code>付款完成后，请将您的支付宝名字 和 端口号，发到上面的QQ，谢谢！
+                            <code onclick="ViewPic()">点击这里查看二维码大图</code>
+                            付款完成后，请将您的支付宝名字 和 端口号，发到上面的QQ，谢谢！
                             </p>
                             </p>
                         </div><!-- /.box-body -->

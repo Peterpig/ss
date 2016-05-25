@@ -23,7 +23,8 @@ namespace Ss\User;
         if ($val) {
             $datas =$val;
         }else{
-            $datas = $this->db->select($this->table,"*");
+            // $datas = $this->db->select($this->table,"*");
+            $datas = $this->db->select($this->table, "*", ["ORDER" => "uid DESC"]);
             $this->mmc->set('all_user', $datas, 0, 60*60*2);
         }
         return $datas;
@@ -117,5 +118,14 @@ namespace Ss\User;
              "uid" => $this->uid
          ]);
      }
+     
+     // 删除邮件列表
+     function del_email($uid){
+         $this->db->delete("email",[
+             "uid" => $uid
+         ]);
+         return 1;
+     }
+
 
  }
